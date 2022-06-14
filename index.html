@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <nav class="left-side">
             <div class="home logo">
-                <a href="/"><img src=""> Dashboard</a>
+                <a href="/"><img src="">Dashboard</a>
             </div>
             <ul class="main-nav">
                 <li><img src="">Home</li>
@@ -28,126 +29,141 @@
                 <li><img src="">Privacy</li>
             </ul>
         </nav>
-        <header>
-            <input type="text" name="search" id="search">
-            <div class="notification"><img src=""></div>
-            <img src="" alt="">
-            <h2 class="small-name">Arcy Gore</h2>
+        <header class="header">
+            <div class="main-bar">
+                <div class="main-bar-left">
+                    <i class="small material-icons">search</i>
+                    <input type="text" name="search" id="search">
+                </div>
+                <div class="main-bar-right">
+                    <div class="notification"><i class="small material-icons">notifications</i></div>
+                    <img src="/images/jackiesquare.jpg" alt="">
+                    <h2 class="small-name">Arcy Gore</h2>
+                </div>
+            </div>
+            <div class="action-bar">
+                <div class="action-bar-left">
+                    <img src="/images/jackiesquare.jpg" alt="">
+                    <div class="welcome">
+                        <p>Hello there, </p>
+                        <h2 class="name">Arcy G (<span class="handle">@arcygore</span>)</h2>
+                    </div>
+                </div>
+                <div class="action-bar-right">
+                    <button type="submit">New</button>
+                    <button type="submit">Upload</button>
+                    <button type="submit">Share</button>
+                </div>
+            </div>
         </header>
-        <div class="action-bar">
-            <img src="" alt="">
-            <div class="welcome">
-                <p>Hello there, </p>
-                <h2 class="name"></h2>
-            </div>
-            <button type="submit">New</button>
-            <button type="submit">Upload</button>
-            <button type="submit">Share</button>
-        </div>
         <div class="grid-content">
-            <div class="projects">
+            <div class="article-left">
                 <h2 class="projects-label">Your Projects</h2>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
+                <div class="project-grid">
+                    <div class="card">
+                        <h3 class="project-title">Super Cool Project</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus amet exercitationem accusamus dolorem aperiam repudiandae blanditiis doloribus beatae aliquam rerum porro, incidunt officiis quas sequi!</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="project-title">Less Cool Project</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, magnam. Fuga cumque mollitia deleniti nam doloribus! Amet, voluptate adipisci. Inventore deleniti adipisci harum reprehenderit obcaecati.</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="project-title">Impossible App</h3>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, deleniti! Explicabo quisquam facere, sunt et harum ab ex recusandae. Quisquam cum asperiores adipisci sequi modi?</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="project-title">Easy Peasy App</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio in suscipit ipsum error eum enim, earum facilis dicta aliquam modi asperiores corporis libero et quibusdam.</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="project-title">Ad Blocker</h3>
+                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, facilis, labore modi facere provident velit fugiat sint recusandae harum quam et nisi tempore aspernatur officia!</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="project-title">Money Maker</h3>
+                        <p class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, veritatis minus repellendus doloribus porro quia, culpa velit tenetur aliquam veniam ad dolorem neque non asperiores!</p>
+                        <ul>
+                            <li class="favorite icon"><i class="small material-icons">thumb_up</i></li>
+                            <li class="watch icon"><i class="small material-icons">visibility</i></li>
+                            <li class="share icon"><i class="small material-icons">share</i></li>
+                        </ul>
+                    </div>                
                 </div>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="project-title"></h3>
-                    <p class="project-description"></p>
-                    <ul>
-                        <li class="favorite"></li>
-                        <li class="watch"></li>
-                        <li class="share"></li>
-                    </ul>
-                </div>
-                
             </div>
-            <div class="announcements-group"></div>
-                <h2 class="announcements-label">Announcements</h2>
-                <div class="announcements-card">
-                    <div class="announcement">
-                        <h3 class="announcement-title"></h3>
-                        <p class="announcement-description"></p>
-                    </div>
-                    <div class="announcement">
-                        <h3 class="announcement-title"></h3>
-                        <p class="announcement-description"></p>
-                    </div>
-                    <div class="announcement">
-                        <h3 class="announcement-title"></h3>
-                        <p class="announcement-description"></p>
+            <div class="article-right">
+                <div class="announcements-group">
+                    <h2 class="announcements-label">Announcements</h2>
+                    <div class="announcements-card">
+                        <div class="announcement">
+                            <h3 class="announcement-title">Site Maintenance</h3>
+                            <p class="announcement-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, minus?</p>
+                        </div>
+                        <div class="announcement">
+                            <h3 class="announcement-title">Community Share Day</h3>
+                            <p class="announcement-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, beatae.</p>
+                        </div>
+                        <div class="announcement">
+                            <h3 class="announcement-title">Updated Privacy Policy</h3>
+                            <p class="announcement-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, reprehenderit?</p>
+                        </div>
                     </div>
                 </div>
-            <div class="trending">
-                <h2 class="trending-label">Trending</h2>
-                <div class="trending-card">
-                    <div class="individuals">
-                        <img src="" alt="">
-                        <div class="names">
-                            <h3 class="handle">@katrina</h3>
-                            <p class="project-name">Life Changing Dating</p>
+                <div class="trending">
+                    <h2 class="trending-label">Trending</h2>
+                    <div class="trending-card">
+                        <div class="individuals">
+                            <img src="" alt="">
+                            <div class="names">
+                                <h3 class="handle">@katrina</h3>
+                                <p class="project-name">Life Changing Dating</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="individuals">
-                        <img src="" alt="">
-                        <div class="names">
-                            <h3 class="handle">@jack</h3>
-                            <p class="project-name">Super Cool Cat</p>
+                        <div class="individuals">
+                            <img src="" alt="">
+                            <div class="names">
+                                <h3 class="handle">@jack</h3>
+                                <p class="project-name">Super Cool Cat</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="individuals">
-                        <img src="" alt="">
-                        <div class="names">
-                            <h3 class="handle">@jasper</h3>
-                            <p class="project-name">Poop Factory</p>
+                        <div class="individuals">
+                            <img src="" alt="">
+                            <div class="names">
+                                <h3 class="handle">@jasper</h3>
+                                <p class="project-name">Poop Factory</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="individuals">
-                        <img src="" alt="">
-                        <div class="names">
-                            <h3 class="handle">@jackie</h3>
-                            <p class="project-name">World Peace Builder</p>
+                        <div class="individuals">
+                            <img src="" alt="">
+                            <div class="names">
+                                <h3 class="handle">@jackie</h3>
+                                <p class="project-name">World Peace Builder</p>
+                            </div>
                         </div>
                     </div>
                 </div>
