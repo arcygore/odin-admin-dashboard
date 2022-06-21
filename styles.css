@@ -15,6 +15,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .container {
@@ -28,6 +29,11 @@ a {
 }
 
 .left-side {
+    background-color: #0AF;
+    color: #fff;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     grid-area: side-bar;
     display: flex;
     flex-direction: column;
@@ -37,11 +43,15 @@ a {
     padding: 1rem 2rem;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+}
+
 .left-side ul {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    font-size: 1.2rem;
+    gap: 1.5rem;
 }
 
 .header {
@@ -49,7 +59,8 @@ a {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: .5rem;
-    padding: .5rem 2rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
     padding-right: 4rem;
 }
 
@@ -57,6 +68,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#search {
+    width: 60vh;
+    border-style: none;
+    background-color: #eee;
+    border-radius: 0.8rem;
 }
 
 .main-bar-left {
@@ -71,7 +89,7 @@ a {
 }
 
 .main-bar img {
-    max-width: 3rem;
+    max-width: 2rem;
     border-radius: 50%;
 }
 
@@ -101,6 +119,16 @@ a {
     gap: 2rem;
     padding: 2rem;
     background-color: #eef;
+    height: calc(100% - 4rem);
+}
+
+.card {
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 5px #ccc;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .article-left {
@@ -109,10 +137,17 @@ a {
 
 .project-grid {
     display: grid;
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 2rem;
+}
+
+.project-grid .card {
+    border-left: solid 5px orange;
+}
+
+.card p {
+    font-size: .9rem;
 }
 
 .card ul {
@@ -124,10 +159,12 @@ a {
 
 .article-right {
     grid-area: content-right;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
     max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
+
 
 
 
